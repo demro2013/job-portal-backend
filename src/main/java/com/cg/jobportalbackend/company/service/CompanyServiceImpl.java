@@ -1,8 +1,8 @@
-package com.cg.jobportalbackend.service;
+package com.cg.jobportalbackend.company.service;
 
 import com.cg.jobportalbackend.dto.CompanyDTO;
 import com.cg.jobportalbackend.entity.Company;
-import com.cg.jobportalbackend.repository.CompanyRepository;
+import com.cg.jobportalbackend.company.repository.CompanyRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

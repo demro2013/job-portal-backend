@@ -1,7 +1,7 @@
 package com.cg.jobportalbackend.company.controller;
 
 import com.cg.jobportalbackend.dto.CompanyDTO;
-import com.cg.jobportalbackend.service.ICompanyService;
+import com.cg.jobportalbackend.company.service.ICompanyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
