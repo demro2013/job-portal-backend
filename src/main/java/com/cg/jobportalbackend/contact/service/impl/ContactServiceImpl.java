@@ -7,8 +7,6 @@ import com.cg.jobportalbackend.contact.repository.ContactRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
-
-import java.time.Instant;
 import java.util.List;
 
 @Service
@@ -49,8 +47,6 @@ public class ContactServiceImpl implements IContactService {
     private Contact mapToEntity(ContactDTO dto) {
         Contact contact = new Contact();
         BeanUtils.copyProperties(dto, contact);
-        contact.setCreatedAt(Instant.now());
-        contact.setCreatedBy("System");
         contact.setStatus("NEW");
         return contact;
     }

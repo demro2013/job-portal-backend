@@ -2,6 +2,7 @@ package com.cg.jobportalbackend.dto;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.List;
 
 public record CompanyDTO(Long id,
                          String name,
@@ -14,5 +15,6 @@ public record CompanyDTO(Long id,
                          String description,
                          Integer employees,
                          String website,
-                         Instant createdAt) {
+                         Instant createdAt,
+                         List<JobDTO> jobs) {
 }
